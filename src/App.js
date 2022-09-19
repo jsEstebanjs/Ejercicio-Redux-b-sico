@@ -1,23 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import Button from './components/Button';
+import Input from './components/Input';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter />
+      <Input />
+      <Button children='Sumar 2' type='sumar'/>
+      <Button children='Restar 2' type='restar'/>
+      <Button children='Multiplicar por 2' type='multiplicar'/>
+      <Button children='Dividir por 2' type='dividir'/>
+
     </div>
   );
 }
